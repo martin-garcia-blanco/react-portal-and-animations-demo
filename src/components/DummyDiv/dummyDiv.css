@@ -1,0 +1,36 @@
+.dummyDiv {
+  width: 200px;
+  height: 100px;
+  border: solid 4px grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes appearAnimation {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes disappearAnimation {
+  from {
+    opacity: 100%;
+  }
+  to {
+    opacity: 0%;
+  }
+}
+
+.dummyDiv-enter-active {
+  animation-name: appearAnimation;
+  animation-duration: 1.5s;
+}
+
+.dummyDiv-exit-active {
+  animation-name: disappearAnimation;
+  animation-duration: 1.5s;
+}

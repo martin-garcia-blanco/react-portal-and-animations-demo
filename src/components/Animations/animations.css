@@ -1,0 +1,8 @@
+.animation-example {
+  margin: 10px auto;
+  display: flex;
+}
+
+.animation-example button {
+  margin: 45px 100px 0 200px;
+}
