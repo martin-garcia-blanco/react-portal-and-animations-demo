@@ -1,6 +1,15 @@
-const Portal = ({ isPortalOpen }) => {
+import ReactDOM from "react-dom";
+import "./portal.css";
+
+const Portal = ({ isPortalOpen, children }) => {
   if (!isPortalOpen) return null;
-  return <h1>I'm a portal</h1>;
+  return ReactDOM.createPortal(
+    <div className="portal">
+      <h1>I'm a portal</h1>
+      {children}
+    </div>,
+    document.body
+  );
 };
 
 export default Portal;

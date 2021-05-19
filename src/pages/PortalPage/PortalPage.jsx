@@ -10,11 +10,11 @@ const PortalPage = () => {
   };
 
   return (
-    <div className="portal">
+    <div className="portal-page">
       <h1>React Portal</h1>
       <p>Click in the button to execute a React Portal</p>
       <button onClick={handlePortalVisibility}>Open portal</button>
-      <Portal isPortalOpen={isPortalOpen}></Portal>
+      <Portal isPortalOpen={isPortalOpen}>{<h2>Portal's children</h2>}</Portal>
     </div>
   );
 };
