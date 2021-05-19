@@ -7,6 +7,7 @@ const Portal = ({ isPortalOpen, children }) => {
     <div className="portal">
       <h1>I'm a portal</h1>
       {children}
+      <button>+1</button>
     </div>,
     document.body
   );
