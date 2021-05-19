@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import logo from "../../logo.svg";
 import "./App.css";
 
@@ -7,7 +8,10 @@ function Landing() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Animations example <Link to="/animations"> here</Link>
+        </p>
+        <p>
+          Portal example <Link to="/portals"> here</Link>
         </p>
       </header>
     </div>
