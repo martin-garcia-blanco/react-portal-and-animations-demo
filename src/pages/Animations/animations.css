@@ -7,5 +7,6 @@
   justify-content: flex-start;
   font-size: calc(10px + 2vmin);
   color: white;
-  padding-top: 10vh;
+  padding: 10vh 5vw 0 5vw;
+  text-align: center;
 }

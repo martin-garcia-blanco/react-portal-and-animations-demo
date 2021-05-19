@@ -34,3 +34,40 @@
   animation-name: disappearAnimation;
   animation-duration: 1.5s;
 }
+
+@keyframes questionnaireFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-70px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes questionnaireFadeLeftOut {
+  0% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(70px);
+  }
+}
+
+.transitionDiv-enter {
+  animation: questionnaireFadeIn ease 1s;
+}
+
+.transitionDiv-appear {
+  animation: questionnaireFadeIn ease 1s;
+}
+
+.transitionDiv-exit {
+  opacity: 0;
+}
+.transitionDiv-exit-active {
+  animation: questionnaireFadeLeftOut ease 1s;
+}
